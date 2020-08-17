@@ -1,1 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+h1 {
+    font-family: $font-raleway;
+    font-size: $font-size-xxxx-large;
+    font-weight: $font-weight-bold;
+}
+
+h2 {
+    font-family: $font-raleway;
+    font-size: $font-size-xxx-large;
+    font-weight: $font-weight-bold;
+}
+
+h3 {
+    font-family: $font-raleway;
+    font-size: $font-size-x-large;
+    font-weight: $font-weight-bold;
+}
+
+h4 {
+    
+}
+
+p {
+    font-family: $font-opensans;
+    font-size: $font-size-small;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+}

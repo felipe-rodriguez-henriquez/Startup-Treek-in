@@ -1,0 +1,31 @@
+button {
+    color: $white;
+    background-color: $ball-blue;
+    font-family: $font-raleway;
+    border: none;
+    &:hover {
+        background-color: $middle-blue;
+    }
+    &:focus {
+        background-color: $lavender-gray;
+    }
+}
+
+nav button {
+    padding: 10px 10px;
+    margin-left: 20px;
+}
+
+.prices__buttons1 {
+    padding: 15px 95px;
+    margin-top: 20px;
+   
+
+}
+
+.prices__buttons2 {
+    padding: 15px 80px;
+    margin-top: 20px;
+   
+
+}

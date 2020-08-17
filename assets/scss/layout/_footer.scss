@@ -1,0 +1,45 @@
+footer {
+    padding: 45px 0px;
+    color: $white;
+    background-color: $raising-black;
+    font-family: $font-raleway;
+    font-size: $font-size-small;
+
+
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            padding: 0px 5px 0px;
+        }
+    }
+
+    p {
+        text-align: center;
+        padding: 45px 0px 0px;
+    }
+
+
+}
+
+
+@media (min-width:$min-md) {
+    footer {
+
+        ul {
+            justify-content: start;
+
+            li {
+                padding: 0px 45px 0px 0px;
+            }
+        }
+
+        p {
+            text-align: right;
+            padding: 0;
+        }
+
+    }
+}

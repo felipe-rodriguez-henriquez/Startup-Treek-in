@@ -1,0 +1,117 @@
+.price__card1, .price__card2 {
+
+    padding: 40px;
+    background-color: $white;
+    &:hover {
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    h3 {
+        font-family: $font-opensans;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-x-large;
+        padding-bottom: 15px;
+    }
+
+    h4 {
+        font-family: $font-raleway;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-xxx-large;
+        padding-bottom: 15px;
+    }
+
+    ul {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        li:before {
+            content:"· ";
+            font-size:30px;
+            vertical-align:middle;
+            line-height:20px;
+        }
+        li {
+            font-family: $font-opensans;
+            font-size: $font-size-small;
+            line-height: 30px;
+            letter-spacing: 0.3px;
+        }
+    }
+}
+
+.price__card1 {
+    margin: 0 30px 60px;
+    ul {
+        margin-bottom: 110px;
+    }
+
+}
+
+.price__card2 {
+    margin: 0 30px 60px;
+
+}
+
+@include respond-to($min-md){
+
+    .price__card1, .price__card2 {
+
+        padding: 40px;
+        background-color: $white;
+        &:hover {
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+    
+        h3 {
+            font-family: $font-opensans;
+            font-weight: $font-weight-regular;
+            font-size: $font-size-x-large;
+            padding-bottom: 15px;
+        }
+    
+        h4 {
+            font-family: $font-raleway;
+            font-weight: $font-weight-bold;
+            font-size: $font-size-xxx-large;
+            padding-bottom: 15px;
+        }
+    
+        ul {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            li:before {
+                content:"· ";
+                font-size:30px;
+                vertical-align:middle;
+                line-height:20px;
+            }
+            li {
+                font-family: $font-opensans;
+                font-size: $font-size-small;
+                line-height: 30px;
+                letter-spacing: 0.3px;
+            }
+        }
+    }
+    
+    .price__card1 {
+        
+        margin: 0 40px 0 0;
+        ul {
+            margin-bottom: 110px;
+        }
+    
+    }
+    
+    .price__card2 {
+        
+        margin: 0 0 0 40px;
+    
+    }
+
+}

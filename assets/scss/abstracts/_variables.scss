@@ -11,7 +11,7 @@ $middle-blue: #77d1dd;
 $blue-lagoon: #b1e4eb;
 $onyx: #333745;
 $spanish-gray: #8f9199;
-$lavender-gray:#fadfda;
+$lavender-gray:#c7c8cc;
 $raising-black: #221d23;
 $nickel: #726f73;
 $silver-chalice:#aeacaf;
@@ -43,6 +43,7 @@ $font-weight-bold: 700;
 
 //breakpoints
 
-$min-phone: 576px;
-$min-laptop: 768px;
-$min-desktop: 992px;
+$min-sm: 576px;
+$min-md: 768px;
+$min-lg: 992px;
+$min-xl: 1200px;

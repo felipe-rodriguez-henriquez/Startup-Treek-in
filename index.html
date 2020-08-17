@@ -11,78 +11,104 @@
     <script src="https://kit.fontawesome.com/a06c5afb79.js" crossorigin="anonymous"></script>
     <!--Custom Styles-->
     <link rel="stylesheet" href="./assets/css/styles.css">
+   
 </head>
 
 <body>
 
     <!--Nav-->
     <nav id="home">
-        <div class="nav__logo">
-            <img src="./assets/img/Logo.svg" alt="logo treek-in svg">
-        </div>
-        <div class="nav__links">
-            <ul>
-                <li><a href="#about">Acerca de</a></li>
-                <li><a href="#features">Características</a></li>
-                <li><a href="#prices">Precios</a></li>
-            </ul>
-        </div>
-        <div class="nav__buttons">
-            <button>Iniciar Sesión</button>
-            <button>Regístrate</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="nav__menu">
+                        <object class="nav__logo" data="./assets/img/Logo.svg" type="image/svg+xml"><img src="./assets/img/Logo.png" alt="logo treek-in png"></object>
+                        <div id="nav__links">
+                            <ul>
+                                <li><a href="#about">Acerca de</a></li>
+                                <li><a href="#features">Características</a></li>
+                                <li><a href="#prices">Precios</a></li>
+                            </ul>
+                        </div>
+                        
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="nav__buttons">
+                        <button>Iniciar Sesión</button>
+                        <button>Regístrate</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 
     <!--Header-->
-    <header id="about" class="hero-section row">
-        <div class="col-md-6">
-            <h1>Haz Trekking sin Parar</h1>
-            <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición.</p>
-        </div>
+    <header id="about" class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <h1>Haz Trekking sin Parar</h1>
+                    <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir
+                        la mejor ruta a tomar con tus compañeros de expedición.</p>
+                </div>
+            </div>
+        </div>  
     </header>
 
     <!--Main-->
     <main>
-    
+
         <!--Section Features-->
-        <section id="features">
-            <h2>Caracteristicas</h2>
-            <div>
-                <img src="./assets/img/bar-graph.svg" alt="gráfico de barras progreso">
-            </div>
-            <div>
-                <h3>Estadísticas de tu progreso</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quidem quos. Porro quis illo repellendus quasi voluptates labore nesciunt error fugit et, sint, earum ducimus molestiae esse sit, doloribus illum.</p>
+        <section id="features" class="main__features">
+            <div class="container-strech">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12"><h2>Caracteristicas</h2></div>
+                    <div class="col-md-6 col-sm-12 main__bars"><img class="tag" src="./assets/img/bar-graph.svg" alt="gráfico de barras progreso"></div>
+                    <div class="col-md-6 col-sm-12 main__stadistics">
+                        <h3>Estadísticas de tu progreso</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis nec orci, viverra turpis himenaeos per sollicitudin facilisis dictum tempor sem, vel porta sociosqu felis fusce nam nascetur libero ligula.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!--Section Prices-->
-        <section id="prices">
-            <h2>Precios</h2>
-            <div>
-                <h3>Trekk-in Free</h3>
-                <h4>$ 0 / mes</h4>
-                <hr>
-                <ul>
-                    <li>Ver mapas creado por usuarios</li>
-                    <li>Concetar con otros usuarios</li>
-                </ul>
-                <hr>
-                <button>Obtén Free</button>
-            </div>
-            <div>
-                <h3>Trekk-in Free</h3>
-                <h4>$ 3500 / mes</h4>
-                <hr>
-                <ul>
-                    <li>Ver mapas creado por usuarios</li>
-                    <li>Concetar con otros usuarios</li>
-                    <li>Definir mejores rutas</li>
-                    <li>Mapas Offline</li>
-                    <li>Integración con otras aplicaciones</li>
-                </ul>
-                <hr>
-                <button>Obtén Premium</button>
+        <section id="prices" class="prices--background">
+            <div class="container-strech">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 price__title">
+                        <h2>Precios</h2>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4 col-sm-12 price__card1">
+                        <h3>Trekk-in Free</h3>
+                        <h4>$ 0 / mes</h4>
+                        <hr>
+                        <ul>
+                            <li>Ver mapas creado por usuarios</li>
+                            <li>Concetar con otros usuarios</li>
+                        </ul>
+                        <hr>
+                        <button class="prices__buttons1">Obtén Free</button>
+                    </div>
+                    <div class="col-md-4 col-sm-12 price__card2">
+                        <h3>Trekk-in Free</h3>
+                        <h4>$ 3500 / mes</h4>
+                        <hr>
+                        <ul>
+                            <li>Ver mapas creado por usuarios</li>
+                            <li>Concetar con otros usuarios</li>
+                            <li>Definir mejores rutas</li>
+                            <li>Mapas Offline</li>
+                            <li>Integración con otras aplicaciones</li>
+                        </ul>
+                        <hr>
+                        <button class="prices__buttons2">Obtén Premium</button>     
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
             </div>
         </section>
 
@@ -90,20 +116,27 @@
 
     <!--Footer-->
     <footer>
-        <div>
-            <ul>
-                <li>Legal</li>
-                <li>Cookies</li>
-                <li>Sobre anuncios</li>
-            </ul>
-        </div>
-        <div>
-            <p>© 2018 Trekk-in SPA.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <ul>
+                        <li>Legal</li>
+                        <li>Cookies</li>
+                        <li>Sobre anuncios</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <p>© 2018 Trekk-in SPA.</p>
+                </div>
+            </div>
         </div>
     </footer>
 
     <!--Jquery-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>      
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <!--Custom js-->
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
